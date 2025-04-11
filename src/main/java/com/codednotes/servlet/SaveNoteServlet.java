@@ -13,9 +13,10 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/saveNote")
 public class SaveNoteServlet extends HttpServlet {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/codedpad"; // Database URL
-    private static final String DB_USER = "root"; // Database user
-    private static final String DB_PASSWORD = "root"; // Database password
+   private static final String DB_URL = "jdbc:mysql://your_database_url";
+    private static final String DB_USER = "your_username";
+    private static final String DB_PASSWORD = "db_password";
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
