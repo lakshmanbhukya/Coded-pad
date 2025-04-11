@@ -17,9 +17,9 @@ import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/access")
 public class AccessServlet extends HttpServlet {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/codedpad";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "root";
+    private static final String DB_URL = "jdbc:mysql://your_database_url";
+    private static final String DB_USER = "your_username";
+    private static final String DB_PASSWORD = "db_password";
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
